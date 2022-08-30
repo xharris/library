@@ -1,0 +1,9 @@
+{
+  "name": "library",
+  "version": "1.0.0",
+  "author": "xharris <xhh950@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "../love-11.4-win64/lovec.exe ."
+  }
+}
