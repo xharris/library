@@ -9,7 +9,9 @@ FONTS = {}
 function x2d.load()
   lg = love.graphics
   
-  IMAGES['tile_a'] = lg.newImage('assets/images/tile_a.png')
+  IMAGES['tile_base'] = lg.newImage('assets/images/tile_base.png')
+  IMAGES['tile_b'] = lg.newImage('assets/images/tile_b.png')
+  IMAGES['tile_e'] = lg.newImage('assets/images/tile_e.png')
   IMAGES['tile_hovered'] = lg.newImage('assets/images/tile_hovered.png')
 
   FONTS['normal'] = lg.newFont('assets/fonts/rainyhearts.ttf', 16)

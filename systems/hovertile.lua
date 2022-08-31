@@ -1,6 +1,7 @@
 return function()
   local size = TILE_SIZE / 2
   local img = IMAGES['tile_hovered']
+  -- use bump.lua for this instead
   for _, lib in x2d.entity.library:all() do 
     local mx, my = x2d.mousePosition()
     if mx and my then 
