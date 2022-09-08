@@ -4,6 +4,7 @@
   "author": "xharris <xhh950@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "../love-11.4-win64/lovec.exe ."
+    "start": "../love-11.4-win64/lovec.exe .",
+    "test": "../love-11.4-win64/lovec.exe xhh2d/test"
   }
 }

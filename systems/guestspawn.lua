@@ -9,7 +9,6 @@ return function(dt)
         if tile.type == 'e' and tile.parent.parent == lib then 
           -- spawn a guest 
           local guest = x2d.entity.guest{ x=tile.x, y=tile.y }
-          print(guest.x, guest.y)
           lib:add(guest)
         end
       end
