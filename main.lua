@@ -23,3 +23,7 @@ function love.load()
 
   x2d.state.push(x2d.state.library)
 end
+
+-- function love.quit()
+--   print(x2d.debug.markdown())
+-- end

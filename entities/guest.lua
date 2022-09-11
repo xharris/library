@@ -3,7 +3,6 @@ return {
   render = function(self, children)
     lg.setColor(1,1,1)
     lg.circle('fill', 0, 0, TILE_SIZE/2)
-    children()
   end,
   defaults = {
     x = 0,

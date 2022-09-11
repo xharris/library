@@ -1,5 +1,5 @@
 -- AStar
---
+-- https://github.com/xiejiangzhi/astar
 -- map:
 --  get_neighbors(node, from_node, add_neighbor_fn, userdata) -- all moveable neighbors
 --  get_cost(from_node, to_node, userdata)

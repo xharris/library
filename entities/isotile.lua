@@ -30,7 +30,6 @@ return {
       img = IMAGES['tile_'..self.type]
       lg.draw(img,0,0,0,1,1,ox,oy+(img:getHeight() - IMAGES['tile_base']:getHeight()))
     end
-    lg.setColor(0,1,0)
   end,
   setElevation = function(tile, elevation)
     local img_w, img_h = IMAGES['tile_base']:getWidth(), IMAGES['tile_base']:getHeight()

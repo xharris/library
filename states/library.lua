@@ -33,7 +33,27 @@ return {
     }
     x2d.entity.isotile.new{
       isogrid=grid,
-      x = 3, y = 1,
+      x = 2, y = 0,
+      type = 'b'
+    }
+    x2d.entity.isotile.new{
+      isogrid=grid,
+      x = 3, y = -1,
+      type = 'b'
+    }
+    x2d.entity.isotile.new{
+      isogrid=grid,
+      x = 0, y = 2,
+      type = 'b'
+    }
+    x2d.entity.isotile.new{
+      isogrid=grid,
+      x = -1, y = 3,
+      type = 'b'
+    }
+    x2d.entity.isotile.new{
+      isogrid=grid,
+      x = -2, y = 4,
       type = 'b'
     }
     x2d.entity.isotile.new{

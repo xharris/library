@@ -13,7 +13,7 @@ return function()
     if grid.tiles[h][ty] and grid.tiles[h][ty][tx] then 
       -- tile exists? (yes, y and x are flipped)
       tile = grid.tiles[h][ty][tx]
-      tile:copy(upd)
+      tile.type = upd.type
     else 
       -- create new tile
       tile = x2d.entity.isotile(upd)
@@ -34,16 +34,12 @@ return function()
     if grid.top == nil or ty < grid.top then grid.top = ty end 
     if grid.bottom == nil or ty > grid.bottom then grid.bottom = ty end
      
-
-    -- local x = (tx + ty) * tile_w
-    -- local y = (ty - tx) * tile_h
-
     tile.index = {h, ty, tx}
     local x, y = util.toIso(tx, ty, tile_w, tile_h)
     
     tile.x = x 
     tile.y = y + (tile.height * tile_h)
-    tile:z(y)
+    tile:z(tile.y)
 
     tile.origy = tile.y
     
