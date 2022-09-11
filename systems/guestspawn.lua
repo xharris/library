@@ -8,11 +8,11 @@ return function(dt)
       for _, tile in x2d.entity.isotile:all() do 
         if tile.type == 'e' and tile.parent.parent == lib then 
           -- spawn a guest 
-          local guest = x2d.entity.guest{ x=tile.x, y=tile.y }
+          local guest = x2d.entity.guest{ tile=tile }
           lib:add(guest)
+          t = 10000000 
         end
-      end
-      t = 10000000  
+      end 
     end
   end
 end

@@ -18,7 +18,6 @@ return function()
       mx = mx + grid.offsetX
       my = my + grid.offsetY
 
-
       local items, len = grid.world:queryPoint(mx, my)
       local hoveredItem 
       for _, item in ipairs(items) do 
@@ -27,7 +26,7 @@ return function()
           tile_w, tile_h
         )
         -- isometric hitbox
-        if (not hoveredItem or item.height < hoveredItem.height) and x == item.index[1] and y == item.index[2] then 
+        if (not hoveredItem or item.height < hoveredItem.height) and x == item.index[2] and y == item.index[3] then 
           hoveredItem = item
         end
       end

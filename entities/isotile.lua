@@ -8,7 +8,9 @@ return {
   defaults = {
     x = 0,
     y = 0,
-    index = {1,1},
+    origy = 0,
+    index = {1,1,1},
+    type = nil,
     height = 0,
     hasHitbox = false,
     isHovered = false
@@ -29,6 +31,21 @@ return {
       lg.draw(img,0,0,0,1,1,ox,oy+(img:getHeight() - IMAGES['tile_base']:getHeight()))
     end
     lg.setColor(0,1,0)
-    
+  end,
+  setElevation = function(tile, elevation)
+    local img_w, img_h = IMAGES['tile_base']:getWidth(), IMAGES['tile_base']:getHeight()
+    local grid = tile.parent 
+    tile.y = (tile.y - (tile.elevation * tile_h) + (elevation * tile_h))
+    tile.elevation = height
+    if grid and grid.world then 
+      grid.world:update(
+        tile, 
+        tile.x - (img_w/2), 
+        tile.y - (img_h/2)
+      )
+    end
+  end,
+  new = function(opts)
+    return x2d.entity.isogridupdate(opts)
   end
 }

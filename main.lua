@@ -3,10 +3,12 @@ util = require 'util'
 lg = nil
 
 TILE_SIZE = 16
+TILE_W, TILE_H = TILE_SIZE, TILE_SIZE / 2
 IMAGES = {}
 FONTS = {}
 
-function x2d.load()
+function love.load()
+  x2d.init()
   lg = love.graphics
   
   IMAGES['tile_base'] = lg.newImage('assets/images/tile_base.png')
@@ -18,5 +20,6 @@ function x2d.load()
   FONTS['large'] = lg.newFont('assets/fonts/rainyhearts32.fnt') 
 
   lg.setFont(FONTS['normal'])
+
   x2d.state.push(x2d.state.library)
 end
