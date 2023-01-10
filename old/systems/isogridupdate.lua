@@ -25,8 +25,8 @@ return function()
         img_w,
         img_h
       )
+      grid:add(tile)
     end
-    grid:add(tile)
     grid.tiles[h][ty][tx] = tile
     -- resize grid?
     if grid.left == nil or tx < grid.left then grid.left = tx end 

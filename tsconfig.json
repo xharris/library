@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "types": [
+      "lua-types/jit",
+      "love-typescript-definitions",
+      "@typescript-to-lua/language-extensions"
+    ],
+    "strict": true,
+    "rootDir": "tssrc",
+    "outDir": "./out"
+  },
+  "tstl": {
+    "luaLibImport": "require",
+    "luaTarget": "JIT",
+    // "noImplicitSelf": true,
+    "sourceMapTraceback": true
+  }
+}

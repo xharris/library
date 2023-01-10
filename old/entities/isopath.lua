@@ -14,7 +14,14 @@ return {
     start = nil,
     dest = nil,
     nodes = {},
+    length = 0,
+
+    pointA = nil,
+    pointB = nil,
     moveT = 0,
+    step = 1,
+    speed = 10,
+    
   },
   validate = function(self)
     assert(self.start, 'missing start')
